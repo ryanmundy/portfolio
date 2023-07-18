@@ -1,1 +1,103 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    overflow: hidden;
+    position: fixed;
+    background-color: #333333;
+    margin: 0;
+}
+
+
+.p-accordion-header-link {
+    border: none !important;
+    background: transparent !important;
+}
+
+.p-accordion-content {
+    background: transparent !important;
+    border: none !important;
+}
+
+.p-accordion-header-link:focus {
+    outline: 0 none;
+    outline-offset: 0;
+    box-shadow: none !important;
+}
+
+.p-accordion-tab {
+    margin-bottom: 20px !important;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: left;
+}
+
+.tab-header {
+    height: 60px;
+
+    // @media only screen and (max-width: 500px) {
+    //     height: 70px;
+    // }
+}
+
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.p-carousel .p-carousel-indicators .p-carousel-indicator.p-highlight button {
+    background-color: #333333 !important;
+}
+
+.p-link:focus {
+    box-shadow: 0 0 0 0.2rem #A5A5A5;
+}
+
+.p-carousel .p-carousel-content .p-carousel-prev:focus,
+.p-carousel .p-carousel-content .p-carousel-next:focus {
+    box-shadow: 0 0 0 0.2rem #A5A5A5;
+}
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
