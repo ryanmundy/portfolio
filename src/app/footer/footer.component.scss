@@ -1,9 +1,10 @@
 .footer-wrapper{
     color: #D6D6D6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     .footer-text {
-        display: inline;
-        vertical-align: super;
         margin-right: 15px;
     }
 
