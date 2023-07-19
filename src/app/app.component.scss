@@ -1,0 +1,43 @@
+.app-wrapper {
+    height: 100dvh;
+    width: 100dvw;
+    display: flex;
+    flex-direction: column;
+
+    @media only screen and (min-width: 992px) {
+        background: url(../assets/images/portrait.jpg);
+        background-position: 25% 50%;
+        background-color: #F9F9F9;
+        background-repeat: no-repeat, no-repeat, repeat-x;
+    }
+
+    @media only screen and (min-width: 1500px) {
+        background: url(../assets/images/portrait.jpg);
+        background-position: 15% 50%;
+        background-color: #F9F9F9;
+        background-repeat: no-repeat, no-repeat, repeat-x;
+    }
+
+    @media only screen and (min-width: 1700px) {
+        background: url(../assets/images/portrait.jpg);
+        background-position: 0% 50%;
+        background-color: #F9F9F9;
+        background-repeat: no-repeat, no-repeat, repeat-x;
+    }
+
+    .scrollable {
+        flex: auto;
+        overflow: auto;
+
+        .mobile-portrait {
+            width: 100%;
+            @media only screen and (min-width: 992px) {
+                display: none;
+            }
+        }
+    }
+}
+
+.opaque-background {
+    background: rgb(249, 249, 249, .5);
+}

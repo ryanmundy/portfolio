@@ -1,21 +1,55 @@
 <div class="portfolio-container">
     <div class="portfolio-sub-container">
         <img class="tab-header" src="../../assets/images/portfolio.png" />
-        <!-- <app-coming-soon-placeholder [text]="'Check back later for updates on projects I am currently working on.'"></app-coming-soon-placeholder> -->
         <div class="portfolio-subheader-container">
             <div class="portfolio-subheader">Spot the Squatch</div>
             <a class="link" target="_blank" href="https://github.com/ryanmundy/bigfoot-tracker"><img height="25px"
                     src="../../assets/images/GitHub-Mark-32px.png" alt="github" class="github-link" /></a>
             <div class="languages-used">Angular - Node - PostgreSQL</div>
-            <div class="project-description">This is a simple web application built to provide those who enjoy keeping an
-                eye out for the elusive bigfoot (or sasquatch) a way to report their own and follow and comment on other's sightings.
+            <div class="project-description">This is a simple web application built to provide those who enjoy keeping
+                an
+                eye out for the elusive bigfoot (or sasquatch) a way to report their own and follow and comment on
+                other's sightings.
                 This includes an Angular front-end that utilizes Google Maps and a Node backend which handles geocoding,
-                reverse geocoding, and other features. This application also includes Passport authentication in addition to
+                reverse geocoding, and other features. This application also includes Passport authentication in
+                addition to
                 an admininstrator approval process for all sightings before being published.</div>
         </div>
         <p-carousel [value]="bigfootProjectMedia" [circular]="true">
             <ng-template let-mediaItem pTemplate="item">
                 <img class="carousel-img" src="../../assets/images/spot-the-squatch/{{mediaItem.image}}" />
+                <div class="carousel-caption">{{mediaItem.title}}</div>
+            </ng-template>
+        </p-carousel>
+
+        <div class="portfolio-subheader-container">
+            <div class="portfolio-subheader">Loaves and Fishes</div>
+            <a class="link" target="_blank" href="https://github.com/ryanmundy/loavesandfishes"><img
+                    height="25px" src="../../assets/images/GitHub-Mark-32px.png" alt="github" class="github-link" /></a>
+            <div class="languages-used">React - Node - PostgreSQL</div>
+            <div class="project-description">This is a web application built for a local nonprofit as a way for them to
+                track meals given out to the community. This was build by a group including myself and three other
+                students as our group capstone project at Prime Digital Academy</div>
+        </div>
+        <p-carousel [value]="loavesAndFishesProjectMedia" [circular]="true">
+            <ng-template let-mediaItem pTemplate="item">
+                <img class="carousel-img" src="../../assets/images/loaves-and-fishes/{{mediaItem.image}}" />
+                <div class="carousel-caption">{{mediaItem.title}}</div>
+            </ng-template>
+        </p-carousel>
+
+        <div class="portfolio-subheader-container">
+            <div class="portfolio-subheader">Caffeinated</div>
+            <a class="link" target="_blank" href="https://github.com/ryanmundy/caffeinated-solo-project"><img
+                    height="25px" src="../../assets/images/GitHub-Mark-32px.png" alt="github" class="github-link" /></a>
+            <div class="languages-used">React - Node - PostgreSQL</div>
+            <div class="project-description">This is a simple web application built to provide caffeine lovers a way to
+                share and find their favorite caffeinated beverages. This project was my capstone solo project at Prime
+                Digital Academy</div>
+        </div>
+        <p-carousel [value]="caffeinatedProjectMedia" [circular]="true">
+            <ng-template let-mediaItem pTemplate="item">
+                <img class="carousel-img" src="../../assets/images/caffeinated/{{mediaItem.image}}" />
                 <div class="carousel-caption">{{mediaItem.title}}</div>
             </ng-template>
         </p-carousel>

@@ -9,7 +9,6 @@ import { SkillsComponent } from './skills/skills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
 import { TabnavComponent } from './tabnav/tabnav.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { FooterComponent } from './footer/footer.component';
 import { AccordionModule } from 'primeng/accordion';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -27,7 +26,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     PortfolioComponent,
     ContactComponent,
     TabnavComponent,
-    DashboardComponent,
     FooterComponent,
     ComingSoonPlaceholderComponent
   ],

@@ -1,1 +1,12 @@
-<router-outlet></router-outlet>
+<div class="app-wrapper">
+    <header>
+        <app-tabnav></app-tabnav>
+    </header>
+    <div class="scrollable" [ngClass]="{'opaque-background': !onHomeView}">
+        <img *ngIf="onHomeView" class="mobile-portrait" src="../../assets/images/portrait.jpg" />
+        <router-outlet></router-outlet>
+    </div>
+    <footer [ngClass]="{'opaque-background': !onHomeView}">
+        <app-footer></app-footer>
+    </footer>
+</div>

@@ -7,17 +7,17 @@ import { NAV_TABS } from './tab';
   styleUrls: ['./tabnav.component.scss']
 })
 export class TabnavComponent implements OnInit {
-
-  selectedTab = NAV_TABS.HOME;
-  tabs = NAV_TABS;
+  public isMenuCollapsed = true;
+  // selectedTab = NAV_TABS.HOME;
+  // tabs = NAV_TABS;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  changeTab(tab: NAV_TABS) {
-    this.selectedTab = tab;
-  }
+  // changeTab(tab: NAV_TABS) {
+  //   this.selectedTab = tab;
+  // }
 
 }
