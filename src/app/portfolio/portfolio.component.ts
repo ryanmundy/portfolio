@@ -27,7 +27,41 @@ export class PortfolioComponent implements OnInit {
       "title": "Map View",
       "image": "bigfoot-map.png"
     }
-  ]
+  ];
+
+  public caffeinatedProjectMedia = [
+    {
+      "title": "Home View",
+      "image": "caffeinated-home.png"
+    }
+  ];
+
+  public loavesAndFishesProjectMedia = [
+    {
+      "title": "Admin View",
+      "image": "admin-view.png"
+    },
+    {
+      "title": "Meal Counter",
+      "image": "meal-counter.png"
+    },
+    {
+      "title": "Meal Counter With Demographics",
+      "image": "demographic-form.png"
+    },
+    {
+      "title": "Report Generator",
+      "image": "report-form.png"
+    },
+    {
+      "title": "Generated Report",
+      "image": "reports.png"
+    },
+    {
+      "title": "Manage Users",
+      "image": "manage-users.png"
+    }
+  ];
 
   constructor() { }
 

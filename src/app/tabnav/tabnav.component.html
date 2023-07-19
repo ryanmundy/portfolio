@@ -1,19 +1,27 @@
-<div class="tabs-container">
-    <div (click)="changeTab(tabs.HOME)" routerLink="/dashboard/home" routerLinkActive="active" class="signature"><img
-            src="../../assets/images/signature.png" /></div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <div routerLink="/home" routerLinkActive="active" class="signature navbar-brand"><img
+                src="../../assets/images/signature.png" /></div>
+        <button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">&#9776;</button>
 
-    <div class="tab" routerLink="/dashboard/home" routerLinkActive="active" (click)="changeTab(tabs.HOME)"
-        [ngClass]="{'selected': selectedTab === tabs.HOME}">Home</div>
-    <div class="tab" routerLink="/dashboard/resume" routerLinkActive="active" (click)="changeTab(tabs.RESUME)"
-        [ngClass]="{'selected': selectedTab === tabs.RESUME}">Résumé
+        <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item" routerLinkActive="active">
+                    <a class="nav-link" routerLink='/home' (click)="isMenuCollapsed = true">Home</a>
+                </li>
+                <li class="nav-item" routerLinkActive="active">
+                    <a class="nav-link" routerLink='/resume' (click)="isMenuCollapsed = true">Résumé</a>
+                </li>
+                <li class="nav-item" routerLinkActive="active">
+                    <a class="nav-link" routerLink='/skills' (click)="isMenuCollapsed = true">Skills</a>
+                </li>
+                <li class="nav-item" routerLinkActive="active">
+                    <a class="nav-link" routerLink='/portfolio' (click)="isMenuCollapsed = true">Portfolio</a>
+                </li>
+                <li class="nav-item" routerLinkActive="active">
+                    <a class="nav-link" routerLink='/contact' (click)="isMenuCollapsed = true">Contact</a>
+                </li>
+            </ul>
+        </div>
     </div>
-    <div class="tab" routerLink="/dashboard/skills" routerLinkActive="active" (click)="changeTab(tabs.SKILLS)"
-        [ngClass]="{'selected': selectedTab === tabs.SKILLS}">Skills
-    </div>
-    <div class="tab" routerLink="/dashboard/portfolio" routerLinkActive="active" (click)="changeTab(tabs.PORTFOLIO)"
-        [ngClass]="{'selected': selectedTab === tabs.PORTFOLIO}">Portfolio
-    </div>
-    <div class="tab" routerLink="/dashboard/contact" routerLinkActive="active" (click)="changeTab(tabs.CONTACT)"
-        [ngClass]="{'selected': selectedTab === tabs.CONTACT}">Contact
-    </div>
-</div>
+</nav>
